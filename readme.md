@@ -2,8 +2,6 @@
 
 Testing Zlib, Flate, Gzip, LZW
 
-each tested 800 times
-
 ```
 $ ~/g/s/g/c/go-compress-bench> go test -bench=. -benchmem -cpuprofile profile.out
 pi size 100002
