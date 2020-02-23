@@ -1,0 +1,8 @@
+cache
+config*.json
+*.code-workspace
+*.log
+*.test
+go.sum
+example/
+profile.out
