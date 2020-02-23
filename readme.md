@@ -1,6 +1,7 @@
 # Go Compress/Decompress algorithm benchmark results
 
-Testing Zlib, Flate, Gzip, LZW
+Testing Golang's built in compression Zlib, Flate, Gzip and LZW CPU/Memory performance.  
+System AMD Ryzen 3600 with 32GB of DDR4 RAM.
 
 ```
 $ ~/g/s/g/c/go-compress-bench> go test -bench=. -benchmem -cpuprofile profile.out
@@ -24,3 +25,12 @@ flate avg size 46961 46pc
 ok  	_/~/go/src/github.com/comomac/go-compress-bench     25.196s
 $ ~/g/s/g/c/go-compress-bench>
 ```
+
+## CPU profile
+![cpu profile](https://raw.githubusercontent.com/comomac/go-compress-bench/master/profile001-cpu.gif)
+
+## Memory profile
+![memory profile](https://raw.githubusercontent.com/comomac/go-compress-bench/master/profile002-mem.gif)
+
+## Block profile
+![block profile](https://raw.githubusercontent.com/comomac/go-compress-bench/master/profile003-block.gif)
