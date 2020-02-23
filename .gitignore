@@ -3,6 +3,7 @@ config*.json
 *.code-workspace
 *.log
 *.test
+*.out
 go.sum
 example/
 profile.out

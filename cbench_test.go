@@ -1,6 +1,6 @@
 package main
 
-// go test -bench=. -benchmem -cpuprofile profile.out
+// go test -bench=. -memprofile profile-mem.out -cpuprofile profile-cpu.out -blockprofile profile-block.out
 
 import (
 	"bytes"
